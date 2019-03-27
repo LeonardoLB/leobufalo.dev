@@ -18,14 +18,14 @@ After check that dependences is installed, inside root folder you can run:
 
 ### How acess
 
- You can acess your blog through link
+After to execute the server, you can acess your local blog through:
 
  `http://localhost:4000/`
 
 
 ### Jekyll Template
 
-Acess the original templare [here](https://github.com/sergiokopplin/indigo)
+Acess the original template [here](https://github.com/sergiokopplin/indigo)
 
 
 
