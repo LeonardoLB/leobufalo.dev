@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-03-27T00:15:58-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Lemes Bufalo</title><subtitle>A blog about technology, travels and experiences of my life.</subtitle><entry><title type="html">Markdown Common Elements</title><link href="/markdown-common-elements/" rel="alternate" type="text/html" title="Markdown Common Elements" /><published>2016-02-24T00:00:00-03:00</published><updated>2016-02-24T00:00:00-03:00</updated><id>/markdown-common-elements</id><content type="html" xml:base="/markdown-common-elements/">&lt;!-- ---
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-27T00:13:57-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Leonardo Lemes Bufalo</title><subtitle>A blog about technology, travels and experiences of my life.</subtitle><entry><title type="html">Markdown Common Elements</title><link href="http://localhost:4000/markdown-common-elements/" rel="alternate" type="text/html" title="Markdown Common Elements" /><published>2016-02-24T00:00:00-03:00</published><updated>2016-02-24T00:00:00-03:00</updated><id>http://localhost:4000/markdown-common-elements</id><content type="html" xml:base="http://localhost:4000/markdown-common-elements/">&lt;!-- ---
 title: &quot;Markdown Common Elements&quot;
 layout: post
 date: 2016-02-24 22:44
@@ -201,7 +201,7 @@ A JS Example:
 [3]: http://www.markitdown.net/
 [4]: http://daringfireball.net/projects/markdown/basics
 [5]: http://daringfireball.net/projects/markdown/syntax
-[6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg --&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Indigo Jekyll Theme</title><link href="/indigo-jekyll-theme/" rel="alternate" type="text/html" title="Indigo Jekyll Theme" /><published>2016-01-23T00:00:00-02:00</published><updated>2016-01-23T00:00:00-02:00</updated><id>/indigo-jekyll-theme</id><content type="html" xml:base="/indigo-jekyll-theme/">&lt;!-- ---
+[6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg --&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Indigo Jekyll Theme</title><link href="http://localhost:4000/indigo-jekyll-theme/" rel="alternate" type="text/html" title="Indigo Jekyll Theme" /><published>2016-01-23T00:00:00-02:00</published><updated>2016-01-23T00:00:00-02:00</updated><id>http://localhost:4000/indigo-jekyll-theme</id><content type="html" xml:base="http://localhost:4000/indigo-jekyll-theme/">&lt;!-- ---
 title: &quot;:ramen: Indigo, minimalist jekyll theme&quot;
 layout: post
 date: 2016-01-23 22:10
@@ -235,7 +235,7 @@ What has inside?
 ---
 
 [Check it out](http://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](http://github.com/sergiokopplin/indigo/issues). --&gt;</content><author><name></name></author><summary type="html">&amp;lt;!– — title: “:ramen: Indigo, minimalist jekyll theme” layout: post date: 2016-01-23 22:10 tag: jekyll image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png headerImage: true projects: true hidden: true # don’t count this post in blog pagination description: “This is a simple and minimalist template for Jekyll for those who likes to eat noodles.” category: project author: johndoe externalLink: false —</summary></entry><entry><title type="html">Markdown Extra Components</title><link href="/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2015-02-24T00:00:00-03:00</published><updated>2015-02-24T00:00:00-03:00</updated><id>/markdown-extra-components</id><content type="html" xml:base="/markdown-extra-components/">&lt;!-- ---
+If you need some help, just [tell me](http://github.com/sergiokopplin/indigo/issues). --&gt;</content><author><name></name></author><summary type="html">&amp;lt;!– — title: “:ramen: Indigo, minimalist jekyll theme” layout: post date: 2016-01-23 22:10 tag: jekyll image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png headerImage: true projects: true hidden: true # don’t count this post in blog pagination description: “This is a simple and minimalist template for Jekyll for those who likes to eat noodles.” category: project author: johndoe externalLink: false —</summary></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2015-02-24T00:00:00-03:00</published><updated>2015-02-24T00:00:00-03:00</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;!-- ---
 title: &quot;Markdown Extra Components&quot;
 layout: post
 date: 2016-02-24 22:48
@@ -290,7 +290,7 @@ Like the [Medium](https://medium.com/) component.
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;side-by-side&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;toleft&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/profile.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://localhost:4000/assets/images/profile.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Photo by John Doe&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
@@ -302,7 +302,7 @@ Like the [Medium](https://medium.com/) component.
 
 &lt;div class=&quot;side-by-side&quot;&gt;
     &lt;div class=&quot;toleft&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;/assets/images/profile.jpg&quot; alt=&quot;Alt Text&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/assets/images/profile.jpg&quot; alt=&quot;Alt Text&quot;&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by John Doe&lt;/figcaption&gt;
     &lt;/div&gt;
 
@@ -320,7 +320,7 @@ Like the [Medium](https://medium.com/) component.
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;toright&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/profile.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://localhost:4000/assets/images/profile.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Alt Text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
         &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Photo by John Doe&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -332,7 +332,7 @@ Like the [Medium](https://medium.com/) component.
     &lt;/div&gt;
 
     &lt;div class=&quot;toright&quot;&gt;
-        &lt;img class=&quot;image&quot; src=&quot;/assets/images/profile.jpg&quot; alt=&quot;Alt Text&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;http://localhost:4000/assets/images/profile.jpg&quot; alt=&quot;Alt Text&quot;&gt;
         &lt;figcaption class=&quot;caption&quot;&gt;Photo by John Doe&lt;/figcaption&gt;
     &lt;/div&gt;
 &lt;/div&gt;
