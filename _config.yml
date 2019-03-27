@@ -121,3 +121,4 @@ exclude: ["travis.sh", "Rakefile", "README.md", "Gemfile", "Gemfile.lock", "FAQ.
 
 # set encoding
 encoding: utf-8
+future: true
