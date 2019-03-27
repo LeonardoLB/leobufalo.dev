@@ -14,9 +14,7 @@ description: Texto sobre a dificuldade do aprendizado
 
 A humanidade nunca teve tanta facilidade para consumir conteúdo, em toda a nossa história nunca teve tanta praticidade para acessar inúmeros cursos ou artigos sobre assuntos de nossos interesses nesse universo repleto de requests e responses, porém, também nunca tivemos um índice tão alto de ansiedade que hoje já foi considerado um dos males deste século.
 
-
 Quando descobrimos um assunto que nos interessa, buscamos conteúdos a respeito para aprendermos mais sobre isso, e isso é muito bom, descobrir novos conteúdos nos permite cada vez mais conhecer novos horizontes e assim abrir um oceano de vídeos, artigos, cursos incríveis para consumir, basta apenas aprender a navegar, mas quanto mais e mais navegamos pelos mares do aprendizado, cada vez mais queremos navegar mais rápido, e nesses momentos pode nascer um problema que não percebemos a tempo a SPA(síndrome do pensamento acelerado), acredito que já deve ter lido sobre, mas caso não, iremos abordar um pouco sobre a SPA neste texto.
-
 
 Aprender algo ontem nos torna de certa forma melhor hoje, e se cada dia nos aprendermos algo novo com certeza iremos estar melhor amanhã, porem vamos trazer esses aprendizados para o mundo da programação, digamos que você está iniciando nesse universo, ou um colega de trabalho ao seu lado, um amigo, enfim, inicialmente é comum que quando entramos nesse universo já nos deparamos com uma escolha backend, frontend ou full stack? No início é sempre uma escolha que tende as primeiras oportunidades de trabalho e conhecendo mais, a pessoa acaba orientando seus estudos para um desses caminhos, imagine um caminho assim:
 
