@@ -6,7 +6,7 @@ tag:
 - people
 - development
 - learn
-star: true
+star: false
 category: blog
 author: leo
 description: Texto sobre a dificuldade do aprendizado
