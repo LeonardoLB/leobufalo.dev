@@ -19,10 +19,10 @@ acredito no esforço e dedicação e que sempre podemos melhorar a cada dia.</p>
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
+	<li>HTML - Pug</li>
 	<li>Responsive (Mobile First)</li>
 	<li>CSS (Stylus, Sass)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
+	<li>Javascript (Design Patterns, Testes, Coffeescript)</li>
 	<li>NodeJS</li>
 	<li>Grunt - Gulp</li>
 	<li>Git</li>
@@ -32,8 +32,7 @@ acredito no esforço e dedicação e que sempre podemos melhorar a cada dia.</p>
     <li>Koylin</li>
 	<li>MySQL - MongoDB - Postgres</li>
 	<li>Scrum and Kanban</li>
-	<li>TDD</li>
-</ul>
+	<li>TDD</li></ul>
 
 <h2>Projects</h2>
 
