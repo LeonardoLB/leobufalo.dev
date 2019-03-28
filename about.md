@@ -28,11 +28,12 @@ acredito no esforço e dedicação e que sempre podemos melhorar a cada dia.</p>
 	<li>Git</li>
 	<li>PHP</li>
 	<li>Python</li>
-    <li>Java<li>
-    <li>Koylin</li>
+	<li>Java</li>
+	<li>Kotlin</li>
 	<li>MySQL - MongoDB - Postgres</li>
 	<li>Scrum and Kanban</li>
-	<li>TDD</li></ul>
+	<li>TDD</li>
+</ul>
 
 <h2>Projects</h2>
 

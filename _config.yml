@@ -22,7 +22,7 @@ resume-url: https://google.com/?q=my+resume
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-analytics-google: 'GTM-TMD9BG8'
+analytics-google: UA-137192173-1
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
