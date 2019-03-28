@@ -14,11 +14,9 @@ quando conheci esse universo decidi orientar meus estudos para essa área. Desde
 sigo em meus estudos buscando sempre aprender e refoçar novos conteúdos sobre programação.</p>
 
 <p>Hoje sigo meus estudos apaixonado por NodeJs e aprimorando cada vez mais meus conhecimentos,
-acredito no esforço e dedicação e que sempre podemos melhorar sempre a cada dia.</p>
+acredito no esforço e dedicação e que sempre podemos melhorar a cada dia.</p>
 
 <h2>Skills</h2>
-
-<h3>Algumas coisas que aprendi no caminho:<h3>
 
 <ul class="skill-list">
 	<li>HTML - Jade - Haml - Erb</li>
