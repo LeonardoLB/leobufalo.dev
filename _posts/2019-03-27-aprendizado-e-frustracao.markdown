@@ -1,7 +1,7 @@
 ---
 title: Aprendizado e Frustração
 layout: post
-date: 2019-04-27 00:36
+date: 2019-03-27 00:36
 tag:
 - people
 - development
