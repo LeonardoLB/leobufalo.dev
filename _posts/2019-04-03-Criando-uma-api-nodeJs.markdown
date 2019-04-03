@@ -110,5 +110,5 @@ Pronto! Se você acessar
 
 ![imagemfile3](https://leobufalo.dev/assets/images/imagemfile3.png)
 
-Ja poderemos visualizar nosso retorno! e nesse momento já criamos uma api com uma rota
-que devolve um valor conteúdo com poucas linhas
+Já poderemos visualizar nosso retorno e nesse momento já criamos uma api com uma rota
+que devolve um conteúdo e com poucas linhas
