@@ -7,15 +7,11 @@ tag:
 - nodejs
 - expressjs
 - development
-# image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
-headerImage: false
-projects: true
-hidden: true # don't count this post in blog pagination
-description: "Criando uma API simples, utilizando NodeJs e Expressjs de forma
-simples e rápida"
+star: false
 category: blog
 author: leo
-externalLink: false
+description: "Criando uma API simples, utilizando NodeJs e Expressjs de forma
+simples e rápida"
 ---
 
 Nesse post vamos criar de maneira simples uma api usando Nodejs e um micro framework
