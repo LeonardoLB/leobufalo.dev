@@ -107,6 +107,7 @@ Pronto! Se você acessar
 ```
 127.0.0.1/rotas
 ```
+Também pode ser localhost como na imagem abaixo:
 
 ![imagemfile3](https://leobufalo.dev/assets/images/imagemfile3.png)
 
