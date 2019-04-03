@@ -13,12 +13,12 @@ projects: true
 hidden: true # don't count this post in blog pagination
 description: "Criando uma API simples, utilizando NodeJs e Expressjs de forma
 simples e rápida"
-category: post
+category: blog
 author: leo
 externalLink: false
 ---
 
-Nesse post vamos criar de maneira simples uma api usando Nodejs é um micro framework
+Nesse post vamos criar de maneira simples uma api usando Nodejs e um micro framework
 chamado [Expressjs](https://expressjs.com), que nos permite definir rotas de maneira
 muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços
 como por exemplo: [Heroku](https://www.heroku.com/), ou [Netlify](https://www.netlify.com/).
