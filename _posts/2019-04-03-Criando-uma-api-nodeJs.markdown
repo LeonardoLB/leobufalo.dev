@@ -1,5 +1,5 @@
 ---
-title: "Criando uma API usando NodeJs utilizando Express.js"
+title: "Criando uma API usando NodeJs e Express.js"
 layout: post
 date: 2019-03-28 10:30
 tag:
@@ -74,7 +74,7 @@ const app = express()
 ```
 Agora nosso arquivo deve estar assim:
 
-[imagemfile]()
+[imagemfile](https://leobufalo.dev/assets/images/imagemfile1.png)
 
 Nesse momento com apenas 2 linhas escritas já podemos definir nossa primeira rota e para fazer isso vamos adicionar o seguinte código:
 ```
@@ -100,7 +100,7 @@ O metodo app.listen() informa em qual porta do nosso querio 127.0.0.1 será exec
 
 Agora seu arquivo deve estar assim:
 
-[imagemfile2]()
+[imagemfile2](https://leobufalo.dev/assets/images/imagemfile2.png)
 
 Nesse momento execute em seu terminal
 ```
@@ -112,7 +112,7 @@ Pronto! Se você acessar
 127.0.0.1/rotas
 ```
 
-[imagemfile3]()
+[imagemfile3](https://leobufalo.dev/assets/images/imagemfile3.png)
 
 Ja poderemos visualizar nosso retorno! e nesse momento já criamos uma api com uma rota
 que devolve um valor conteúdo com poucas linhas
