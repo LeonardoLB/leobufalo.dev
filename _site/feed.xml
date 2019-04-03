@@ -1,88 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-03T17:12:38-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Lemes Bufalo</title><subtitle>A blog about technology, travels and experiences of my life.</subtitle><entry><title type="html">Harbor - Estrutura para desenvolver seu Front-end</title><link href="/harbor/" rel="alternate" type="text/html" title="Harbor - Estrutura para desenvolver seu Front-end" /><published>2019-03-28T10:30:00-03:00</published><updated>2019-03-28T10:30:00-03:00</updated><id>/harbor</id><content type="html" xml:base="/harbor/">&lt;p&gt;Harbor é uma estrutura bem simples para fácilitar o desenvolvimento
-do seu Front-end, possibilitando uma forma de organizar seus arquivos
-e entregar uma estrutura mais limpa, dando a possibilidade de criar
-componentes de forma fácil e organizada, uma estrutura que te deixa
-confortável para incorporar o seu back-end da maneira que desejar.&lt;/p&gt;
-
-&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Npm Package&lt;/li&gt;
-  &lt;li&gt;Nodejs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;como-funciona&quot;&gt;Como funciona&lt;/h2&gt;
-
-&lt;p&gt;A estrutura utiliza o Gulp Js para renderizar as suas views.
-A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.&lt;/p&gt;
-
-&lt;h2 id=&quot;como-faz-para-rodar&quot;&gt;Como faz para rodar?&lt;/h2&gt;
-
-&lt;p&gt;Para rodar o gulp basta acessar a pasta:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src/tools/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;e executar o comando:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;ainda dentro da pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;tools&lt;/code&gt; basta rodar o comando:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gulp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;a-estrutura&quot;&gt;A estrutura&lt;/h2&gt;
-
-&lt;h1 id=&quot;para-que-serve-cada-pasta&quot;&gt;Para que serve cada pasta?&lt;/h1&gt;
-
-&lt;p&gt;A idéia é que você deixe seus componentes separados, ou seja quanto menor o arquivo, melhor.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---src
-
-------styles
-
----------components //Aqui você irá criar um arquivo para cada componente .styl
-
----------helpers // Aqui conterá tudo aquilo que pode lhe auxiliar que não sejá um componente
-
----------main.styl // Esse é o arquivo que o gulp irá renderizar que importa as duas pastas
-
-------views
-
----------includes // Aqui você irá criar um arquivo para cada componente .pug assim podera realizar um include caso queira.
-
-------------global // Componentes globais
-
-------------template
-
----------------main.pug // Todas as paginas pug realizam um include deste template
-
----------pages // Nesta pasta você poderá criar as suas páginas .pug
-
-------------example.txt // exemplo de como deve ser criado as páginas
-
----models // Aqui você poderá incorporar as models da maneira como quiser.
-
----views // Aqui será redenderizado as suas páginas .pug criadas em src/views/pages/.pug em arquivos .html
-
----assets
-
-------css // Aqui será renderizado um único arquivo .css de todos os arquivos .styl indicados no arquivo main.styl dentro da pasta src/styles/main.styl
-
-------images // pasta de imagens
-
-------js // Nesta pasta deve se encontrar o arquivo bundle.js contendo todo o js do seu projeto em um unico arquivo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;baseado-em&quot;&gt;Baseado em&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ITCSS
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://willianjusten.com.br/organizando-seu-css-com-itcss/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;OOCSS
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://tableless.com.br/oocss-ou-css-do-jeito-certo/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>leo</name></author><category term="project" /><category term="frontend" /><summary type="html">Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa, dando a possibilidade de criar componentes de forma fácil e organizada, uma estrutura que te deixa confortável para incorporar o seu back-end da maneira que desejar.</summary></entry><entry><title type="html">Criando uma API usando NodeJs e Express.js</title><link href="/Criando-uma-api-nodeJs/" rel="alternate" type="text/html" title="Criando uma API usando NodeJs e Express.js" /><published>2019-03-28T10:30:00-03:00</published><updated>2019-03-28T10:30:00-03:00</updated><id>/Criando-uma-api-nodeJs</id><content type="html" xml:base="/Criando-uma-api-nodeJs/">&lt;p&gt;Nesse post vamos criar de maneira simples uma api usando Nodejs e um framework
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-03T17:28:45-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Lemes Bufalo</title><subtitle>A blog about technology, travels and experiences of my life.</subtitle><entry><title type="html">Criando uma API usando NodeJs e Express.js</title><link href="/Criando-uma-api-nodeJs/" rel="alternate" type="text/html" title="Criando uma API usando NodeJs e Express.js" /><published>2019-04-03T17:28:00-03:00</published><updated>2019-04-03T17:28:00-03:00</updated><id>/Criando-uma-api-nodeJs</id><content type="html" xml:base="/Criando-uma-api-nodeJs/">&lt;p&gt;Nesse post vamos criar de maneira simples uma api usando Nodejs e um framework
 chamado &lt;a href=&quot;https://expressjs.com&quot;&gt;Expressjs&lt;/a&gt;, que nos permite definir rotas de maneira
 muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços
 como por exemplo: &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;, ou &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt;.&lt;/p&gt;
@@ -173,7 +89,91 @@ requisições como POST, PUT, DELETE entre outros, e no response é onde devolve
 &lt;p&gt;&lt;img src=&quot;https://leobufalo.dev/assets/images/imagemfile3.png&quot; alt=&quot;imagemfile3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Já poderemos visualizar nosso retorno e nesse momento já criamos uma api com uma rota
-que devolve um conteúdo e com poucas linhas&lt;/p&gt;</content><author><name>leo</name></author><category term="blog" /><category term="api" /><category term="nodejs" /><category term="expressjs" /><category term="development" /><summary type="html">Nesse post vamos criar de maneira simples uma api usando Nodejs e um framework chamado Expressjs, que nos permite definir rotas de maneira muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços como por exemplo: Heroku, ou Netlify.</summary></entry><entry><title type="html">Aprendizado e Frustração</title><link href="/aprendizado-e-frustracao/" rel="alternate" type="text/html" title="Aprendizado e Frustração" /><published>2019-03-27T00:36:00-03:00</published><updated>2019-03-27T00:36:00-03:00</updated><id>/aprendizado-e-frustracao</id><content type="html" xml:base="/aprendizado-e-frustracao/">&lt;p&gt;A humanidade nunca teve tanta facilidade para consumir conteúdo, em toda a nossa história nunca teve tanta praticidade para acessar inúmeros cursos ou artigos sobre assuntos de nossos interesses nesse universo repleto de requests e responses, porém, também nunca tivemos um índice tão alto de ansiedade que hoje já foi considerado um dos males deste século.&lt;/p&gt;
+que devolve um conteúdo e com poucas linhas&lt;/p&gt;</content><author><name>leo</name></author><category term="blog" /><category term="api" /><category term="nodejs" /><category term="expressjs" /><category term="development" /><summary type="html">Nesse post vamos criar de maneira simples uma api usando Nodejs e um framework chamado Expressjs, que nos permite definir rotas de maneira muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços como por exemplo: Heroku, ou Netlify.</summary></entry><entry><title type="html">Harbor - Estrutura para desenvolver seu Front-end</title><link href="/harbor/" rel="alternate" type="text/html" title="Harbor - Estrutura para desenvolver seu Front-end" /><published>2019-03-28T10:30:00-03:00</published><updated>2019-03-28T10:30:00-03:00</updated><id>/harbor</id><content type="html" xml:base="/harbor/">&lt;p&gt;Harbor é uma estrutura bem simples para fácilitar o desenvolvimento
+do seu Front-end, possibilitando uma forma de organizar seus arquivos
+e entregar uma estrutura mais limpa, dando a possibilidade de criar
+componentes de forma fácil e organizada, uma estrutura que te deixa
+confortável para incorporar o seu back-end da maneira que desejar.&lt;/p&gt;
+
+&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Npm Package&lt;/li&gt;
+  &lt;li&gt;Nodejs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;como-funciona&quot;&gt;Como funciona&lt;/h2&gt;
+
+&lt;p&gt;A estrutura utiliza o Gulp Js para renderizar as suas views.
+A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.&lt;/p&gt;
+
+&lt;h2 id=&quot;como-faz-para-rodar&quot;&gt;Como faz para rodar?&lt;/h2&gt;
+
+&lt;p&gt;Para rodar o gulp basta acessar a pasta:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src/tools/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;e executar o comando:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;ainda dentro da pasta &lt;code class=&quot;highlighter-rouge&quot;&gt;tools&lt;/code&gt; basta rodar o comando:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gulp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;a-estrutura&quot;&gt;A estrutura&lt;/h2&gt;
+
+&lt;h1 id=&quot;para-que-serve-cada-pasta&quot;&gt;Para que serve cada pasta?&lt;/h1&gt;
+
+&lt;p&gt;A idéia é que você deixe seus componentes separados, ou seja quanto menor o arquivo, melhor.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---src
+
+------styles
+
+---------components //Aqui você irá criar um arquivo para cada componente .styl
+
+---------helpers // Aqui conterá tudo aquilo que pode lhe auxiliar que não sejá um componente
+
+---------main.styl // Esse é o arquivo que o gulp irá renderizar que importa as duas pastas
+
+------views
+
+---------includes // Aqui você irá criar um arquivo para cada componente .pug assim podera realizar um include caso queira.
+
+------------global // Componentes globais
+
+------------template
+
+---------------main.pug // Todas as paginas pug realizam um include deste template
+
+---------pages // Nesta pasta você poderá criar as suas páginas .pug
+
+------------example.txt // exemplo de como deve ser criado as páginas
+
+---models // Aqui você poderá incorporar as models da maneira como quiser.
+
+---views // Aqui será redenderizado as suas páginas .pug criadas em src/views/pages/.pug em arquivos .html
+
+---assets
+
+------css // Aqui será renderizado um único arquivo .css de todos os arquivos .styl indicados no arquivo main.styl dentro da pasta src/styles/main.styl
+
+------images // pasta de imagens
+
+------js // Nesta pasta deve se encontrar o arquivo bundle.js contendo todo o js do seu projeto em um unico arquivo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;baseado-em&quot;&gt;Baseado em&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ITCSS
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://willianjusten.com.br/organizando-seu-css-com-itcss/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OOCSS
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://tableless.com.br/oocss-ou-css-do-jeito-certo/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>leo</name></author><category term="project" /><category term="frontend" /><summary type="html">Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa, dando a possibilidade de criar componentes de forma fácil e organizada, uma estrutura que te deixa confortável para incorporar o seu back-end da maneira que desejar.</summary></entry><entry><title type="html">Aprendizado e Frustração</title><link href="/aprendizado-e-frustracao/" rel="alternate" type="text/html" title="Aprendizado e Frustração" /><published>2019-03-27T00:36:00-03:00</published><updated>2019-03-27T00:36:00-03:00</updated><id>/aprendizado-e-frustracao</id><content type="html" xml:base="/aprendizado-e-frustracao/">&lt;p&gt;A humanidade nunca teve tanta facilidade para consumir conteúdo, em toda a nossa história nunca teve tanta praticidade para acessar inúmeros cursos ou artigos sobre assuntos de nossos interesses nesse universo repleto de requests e responses, porém, também nunca tivemos um índice tão alto de ansiedade que hoje já foi considerado um dos males deste século.&lt;/p&gt;
 
 &lt;p&gt;Quando descobrimos um assunto que nos interessa, buscamos conteúdos a respeito para aprendermos mais sobre isso, e isso é muito bom, descobrir novos conteúdos nos permite cada vez mais conhecer novos horizontes e assim abrir um oceano de vídeos, artigos, cursos incríveis para consumir, basta apenas aprender a navegar, mas quanto mais e mais navegamos pelos mares do aprendizado, cada vez mais queremos navegar mais rápido, e nesses momentos pode nascer um problema que não percebemos a tempo a SPA(síndrome do pensamento acelerado), acredito que já deve ter lido sobre, mas caso não, iremos abordar um pouco sobre a SPA neste texto.&lt;/p&gt;
 

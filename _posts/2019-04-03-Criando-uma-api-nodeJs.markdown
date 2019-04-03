@@ -1,7 +1,7 @@
 ---
 title: "Criando uma API usando NodeJs e Express.js"
 layout: post
-date: 2019-03-28 10:30
+date: 2019-04-03 17:28
 tag:
 - api
 - nodejs
