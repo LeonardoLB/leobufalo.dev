@@ -13,7 +13,7 @@ projects: true
 hidden: true # don't count this post in blog pagination
 description: "Criando uma API simples, utilizando NodeJs e Expressjs de forma
 simples e rápida"
-category: project
+category: post
 author: leo
 externalLink: false
 ---
