@@ -25,13 +25,13 @@
     <meta property="og:type" content="profile">
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Harbor - Estrutura para desenvolver seu Front-end | Leonardo Lemes Bufalo</title>
+<title>Criando uma API usando NodeJs utilizando Express.js | Leonardo Lemes Bufalo</title>
 <meta name="generator" content="Jekyll v3.7.4" />
-<meta property="og:title" content="Harbor - Estrutura para desenvolver seu Front-end" />
+<meta property="og:title" content="Criando uma API usando NodeJs utilizando Express.js" />
 <meta name="author" content="leo" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa" />
-<meta property="og:description" content="Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa" />
+<meta name="description" content="Criando uma API simples, utilizando NodeJs e Expressjs de forma simples e rápida" />
+<meta property="og:description" content="Criando uma API simples, utilizando NodeJs e Expressjs de forma simples e rápida" />
 <meta property="og:site_name" content="Leonardo Lemes Bufalo" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-03-28T10:30:00-03:00" />
@@ -39,7 +39,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@leo" />
 <script type="application/ld+json">
-{"description":"Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa","author":{"@type":"Person","name":"leo"},"@type":"BlogPosting","url":"/harbor/","headline":"Harbor - Estrutura para desenvolver seu Front-end","dateModified":"2019-03-28T10:30:00-03:00","datePublished":"2019-03-28T10:30:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"/harbor/"},"@context":"http://schema.org"}</script>
+{"description":"Criando uma API simples, utilizando NodeJs e Expressjs de forma simples e rápida","author":{"@type":"Person","name":"leo"},"@type":"BlogPosting","url":"/Criando-uma-api-nodeJs/","headline":"Criando uma API usando NodeJs utilizando Express.js","dateModified":"2019-03-28T10:30:00-03:00","datePublished":"2019-03-28T10:30:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"/Criando-uma-api-nodeJs/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -65,7 +65,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="/harbor/">
+    <link rel="canonical" href="/Criando-uma-api-nodeJs/">
     <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml" />
 
     <style>
@@ -1458,7 +1458,7 @@ pre {
 
 
 
-<h1 class="title">Harbor - Estrutura para desenvolver seu Front-end</h1>
+<h1 class="title">Criando uma API usando NodeJs utilizando Express.js</h1>
 
 <span class="date">
     <time datetime="28-03-2019">Thursday. March 28, 2019</time>
@@ -1466,7 +1466,7 @@ pre {
     
 
     
-        1 min
+        3 mins
     
 </span>
 
@@ -1475,16 +1475,23 @@ pre {
 
     <div class="post-tags">
         
-            <a class="item" href="/tags/#frontend">frontend</a>
+            <a class="item" href="/tags/#api">api</a>
+        
+            <a class="item" href="/tags/#nodejs">nodejs</a>
+        
+            <a class="item" href="/tags/#expressjs">expressjs</a>
+        
+            <a class="item" href="/tags/#development">development</a>
         
     </div>
 
 
-<p>Harbor é uma estrutura bem simples para fácilitar o desenvolvimento
-do seu Front-end, possibilitando uma forma de organizar seus arquivos
-e entregar uma estrutura mais limpa, dando a possibilidade de criar
-componentes de forma fácil e organizada, uma estrutura que te deixa
-confortável para incorporar o seu back-end da maneira que desejar.</p>
+<p>Nesse post vamos criar de maneira simples uma api usando Nodejs é um micro framework
+chamado <a href="https://expressjs.com">Expressjs</a>, que nos permite definir rotas de maneira
+muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços
+como por exemplo: <a href="https://www.heroku.com/">Heroku</a>, ou <a href="https://www.netlify.com/">Netlify</a>.</p>
+
+<p>Primeiro vamos dar uma olhada nos requisitos que precisamos para prosseguirmos:</p>
 
 <h2 id="requisitos">Requisitos</h2>
 
@@ -1493,78 +1500,83 @@ confortável para incorporar o seu back-end da maneira que desejar.</p>
   <li>Nodejs</li>
 </ul>
 
-<h2 id="como-funciona">Como funciona</h2>
-
-<p>A estrutura utiliza o Gulp Js para renderizar as suas views.
-A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p>
-
-<h2 id="como-faz-para-rodar">Como faz para rodar?</h2>
-
-<p>Para rodar o gulp basta acessar a pasta:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src/tools/
+<p>Vamos começar, escolha um editor de texto da sua preferência, eu particulamente gosto de
+utilizar o <a href="https://code.visualstudio.com/">Visual Code</a>, vamos iniciar o projeto, eu irei
+deixar o nome como ‘exemplo-api-express’, abra o projeto em seu terminal e vamos começar a
+estruturar nosso pequeno projeto. Abra seu terminal e execute o comendo:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm init -yes
 </code></pre></div></div>
-<p>e executar o comando:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
+<p>Essa linha irá adicionar ao nosso projeto um arquivo chamado package.json e nele irá conter informações
+que o compõem. Se você abrir o package.json deverá se parecer com isso:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "name": "example-api-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rotas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
 </code></pre></div></div>
-<p>ainda dentro da pasta <code class="highlighter-rouge">tools</code> basta rodar o comando:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gulp
+<p>Se você não conhece nada sobre o arquivo package.json aconselho uma breve <a href="https://medium.com/trainingcenter/tudo-que-voc%C3%AA-queria-saber-sobre-o-package-lock-json-mas-estava-com-vergonha-de-perguntar-e70589f2855f">leitura</a> para ajudar a entender melhor. Novamente no terminal vamos instalar nosso framework, executando:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install express
 </code></pre></div></div>
+<p>Nesse momento deverá aparecer em seu projeto uma pasta chamada node_modules, nessa pasta contém todas as
+nossas dependências, inclusive o express que instalamos a pouco e suas dependências também.</p>
 
-<h2 id="a-estrutura">A estrutura</h2>
+<p>Agora com o express instalado, vamos usufruir desse belíssimo framework, dentro do projeto crie um arquivo javascript chamado “rotas.js”.</p>
 
-<h1 id="para-que-serve-cada-pasta">Para que serve cada pasta?</h1>
-
-<p>A idéia é que você deixe seus componentes separados, ou seja quanto menor o arquivo, melhor.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---src
-
-------styles
-
----------components //Aqui você irá criar um arquivo para cada componente .styl
-
----------helpers // Aqui conterá tudo aquilo que pode lhe auxiliar que não sejá um componente
-
----------main.styl // Esse é o arquivo que o gulp irá renderizar que importa as duas pastas
-
-------views
-
----------includes // Aqui você irá criar um arquivo para cada componente .pug assim podera realizar um include caso queira.
-
-------------global // Componentes globais
-
-------------template
-
----------------main.pug // Todas as paginas pug realizam um include deste template
-
----------pages // Nesta pasta você poderá criar as suas páginas .pug
-
-------------example.txt // exemplo de como deve ser criado as páginas
-
----models // Aqui você poderá incorporar as models da maneira como quiser.
-
----views // Aqui será redenderizado as suas páginas .pug criadas em src/views/pages/.pug em arquivos .html
-
----assets
-
-------css // Aqui será renderizado um único arquivo .css de todos os arquivos .styl indicados no arquivo main.styl dentro da pasta src/styles/main.styl
-
-------images // pasta de imagens
-
-------js // Nesta pasta deve se encontrar o arquivo bundle.js contendo todo o js do seu projeto em um unico arquivo
+<p>Agora vamos “requerir” o framework que foi instalado em nossa node_modules para isso vamos adiconar nossa
+primeira linha ao arquivo:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const express = require('express')
 </code></pre></div></div>
 
-<h2 id="baseado-em">Baseado em</h2>
+<p>e em seguida vamos startar o express:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const app = express()
+</code></pre></div></div>
+<p>Agora nosso arquivo deve estar assim:</p>
 
-<ul>
-  <li>ITCSS
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://willianjusten.com.br/organizando-seu-css-com-itcss/
-</code></pre></div>    </div>
-  </li>
-  <li>OOCSS
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://tableless.com.br/oocss-ou-css-do-jeito-certo/
-</code></pre></div>    </div>
-  </li>
-</ul>
+<p><a href="">imagemfile</a></p>
+
+<p>Nesse momento com apenas 2 linhas escritas já podemos definir nossa primeira rota e para fazer isso vamos adicionar o seguinte código:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app.get('/rota', function (request, response) {
+    response.json("Rota testada")
+})
+
+app.listen(4001)
+
+</code></pre></div></div>
+
+<p>Explicando o que aconteceu acima, dentro da instâcia do app temos alguns metodos que podemos utilizar
+para que possamos definir a rota e os verbos HTTP, caso não conheça os verbos aconselho mais uma <a href="https://www.devmedia.com.br/servicos-restful-verbos-http/37103">leitura</a>, no exemplo mostrei um simples GET.</p>
+
+<p>Neste metodo get passamos dois paramêtros, o primeiro é a rota, o caminho que deverá ser requisitado, e o
+segundo paramêtro é a função que será executada, também conhecida como callback.</p>
+
+<p>O nosso callback recebe dois paramêtros, o resquest e response, no response é onde temos informações de
+requisições como POST, PUT, DELETE entre outros, e no response é onde devolvemos a resposta da requisição.</p>
+
+<p>O metodo app.listen() informa em qual porta do nosso querio 127.0.0.1 será executado nossa api então basta informar uma porta que não esteja sendo utilizada!</p>
+
+<p>Agora seu arquivo deve estar assim:</p>
+
+<p><a href="">imagemfile2</a></p>
+
+<p>Nesse momento execute em seu terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node rotas.js
+</code></pre></div></div>
+
+<p>Pronto! Se você acessar</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1/rotas
+</code></pre></div></div>
+
+<p><a href="">imagemfile3</a></p>
+
+<p>Ja poderemos visualizar nosso retorno! e nesse momento já criamos uma api com uma rota
+que devolve um valor conteúdo com poucas linhas</p>
 
 
 
@@ -1578,7 +1590,9 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p
             
                 
             
-        
+                
+            
+                
             
                 
             
@@ -1586,7 +1600,29 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p
             
                 
             
+                
+            
+                
+            
+                
+            
         
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
             
                 
             
@@ -1597,23 +1633,61 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p
             
                 
             
-        
-    
-        
-        
-            
                 
             
-        
-            
                 
-            
-        
             
                 
             
         
     
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                    <h4>Related Posts</h4>
+                    <ul>
+                    
+                    <li class="relatedPost">
+                        <a href="/aprendizado-e-frustracao/">Aprendizado e Frustração
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+    
+    
+        </ul>
     
 </div>
 
@@ -1632,7 +1706,7 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p
         <div class="share">
             <!-- Note: Only use three share links if your site width is set to large -->
             <!-- If site width is set to normal, you may choose any two share links -->
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=/harbor/ - Harbor - Estrutura para desenvolver seu Front-end by @leolsbufalo">
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=/Criando-uma-api-nodeJs/ - Criando uma API usando NodeJs utilizando Express.js by @leolsbufalo">
                 <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="icon-twitter">Tweet</span>
             </a>
 
@@ -1640,15 +1714,15 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p
                 <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="icon-facebook-rect">Share</span>
             </a>
 
-            <!-- <a class="google-plus" href="https://plus.google.com/share?url=/harbor/" target="_blank">
+            <!-- <a class="google-plus" href="https://plus.google.com/share?url=/Criando-uma-api-nodeJs/" target="_blank">
                 <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg><span class="icon-google-plus">Share</span>
             </a> -->
 
-            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/harbor/&amp;title=Harbor - Estrutura para desenvolver seu Front-end&amp;summary=Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa&amp;source=" target="_blank">
+            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/Criando-uma-api-nodeJs/&amp;title=Criando uma API usando NodeJs utilizando Express.js&amp;summary=Criando uma API simples, utilizando NodeJs e Expressjs de forma simples e rápida&amp;source=" target="_blank">
                 <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
             </a> -->
 
-            <!-- <a class="reddit" href="https://reddit.com/submit?url=/harbor/&amp;title=Harbor - Estrutura para desenvolver seu Front-end" target="_blank">
+            <!-- <a class="reddit" href="https://reddit.com/submit?url=/Criando-uma-api-nodeJs/&amp;title=Criando uma API usando NodeJs utilizando Express.js" target="_blank">
                 <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
             </a> -->
         </div>
@@ -1663,8 +1737,8 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.</p
     <script type="text/javascript">
 
         var disqus_config = function () {
-            this.page.url = '/harbor/';
-            this.page.identifier = '/harbor';
+            this.page.url = '/Criando-uma-api-nodeJs/';
+            this.page.identifier = '/Criando-uma-api-nodeJs';
         };
         var disqus_shortname = 'leobufalo';
         var disqus_developer = 0;

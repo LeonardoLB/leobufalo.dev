@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-03T14:04:33-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Lemes Bufalo</title><subtitle>A blog about technology, travels and experiences of my life.</subtitle><entry><title type="html">Harbor - Estrutura para desenvolver seu Front-end</title><link href="/harbor/" rel="alternate" type="text/html" title="Harbor - Estrutura para desenvolver seu Front-end" /><published>2019-03-28T10:30:00-03:00</published><updated>2019-03-28T10:30:00-03:00</updated><id>/harbor</id><content type="html" xml:base="/harbor/">&lt;p&gt;Harbor é uma estrutura bem simples para fácilitar o desenvolvimento
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-04-03T16:00:53-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Lemes Bufalo</title><subtitle>A blog about technology, travels and experiences of my life.</subtitle><entry><title type="html">Harbor - Estrutura para desenvolver seu Front-end</title><link href="/harbor/" rel="alternate" type="text/html" title="Harbor - Estrutura para desenvolver seu Front-end" /><published>2019-03-28T10:30:00-03:00</published><updated>2019-03-28T10:30:00-03:00</updated><id>/harbor</id><content type="html" xml:base="/harbor/">&lt;p&gt;Harbor é uma estrutura bem simples para fácilitar o desenvolvimento
 do seu Front-end, possibilitando uma forma de organizar seus arquivos
 e entregar uma estrutura mais limpa, dando a possibilidade de criar
 componentes de forma fácil e organizada, uma estrutura que te deixa
@@ -82,7 +82,97 @@ A estrutura utiliza dois pré processadores: Pug para HTML e Stylus para CSS.&lt
     &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://tableless.com.br/oocss-ou-css-do-jeito-certo/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>leo</name></author><category term="project" /><category term="frontend" /><summary type="html">Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa, dando a possibilidade de criar componentes de forma fácil e organizada, uma estrutura que te deixa confortável para incorporar o seu back-end da maneira que desejar.</summary></entry><entry><title type="html">Aprendizado e Frustração</title><link href="/aprendizado-e-frustracao/" rel="alternate" type="text/html" title="Aprendizado e Frustração" /><published>2019-03-27T00:36:00-03:00</published><updated>2019-03-27T00:36:00-03:00</updated><id>/aprendizado-e-frustracao</id><content type="html" xml:base="/aprendizado-e-frustracao/">&lt;p&gt;A humanidade nunca teve tanta facilidade para consumir conteúdo, em toda a nossa história nunca teve tanta praticidade para acessar inúmeros cursos ou artigos sobre assuntos de nossos interesses nesse universo repleto de requests e responses, porém, também nunca tivemos um índice tão alto de ansiedade que hoje já foi considerado um dos males deste século.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>leo</name></author><category term="project" /><category term="frontend" /><summary type="html">Harbor é uma estrutura bem simples para fácilitar o desenvolvimento do seu Front-end, possibilitando uma forma de organizar seus arquivos e entregar uma estrutura mais limpa, dando a possibilidade de criar componentes de forma fácil e organizada, uma estrutura que te deixa confortável para incorporar o seu back-end da maneira que desejar.</summary></entry><entry><title type="html">Criando uma API usando NodeJs utilizando Express.js</title><link href="/Criando-uma-api-nodeJs/" rel="alternate" type="text/html" title="Criando uma API usando NodeJs utilizando Express.js" /><published>2019-03-28T10:30:00-03:00</published><updated>2019-03-28T10:30:00-03:00</updated><id>/Criando-uma-api-nodeJs</id><content type="html" xml:base="/Criando-uma-api-nodeJs/">&lt;p&gt;Nesse post vamos criar de maneira simples uma api usando Nodejs é um micro framework
+chamado &lt;a href=&quot;https://expressjs.com&quot;&gt;Expressjs&lt;/a&gt;, que nos permite definir rotas de maneira
+muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços
+como por exemplo: &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;, ou &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Primeiro vamos dar uma olhada nos requisitos que precisamos para prosseguirmos:&lt;/p&gt;
+
+&lt;h2 id=&quot;requisitos&quot;&gt;Requisitos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Npm Package&lt;/li&gt;
+  &lt;li&gt;Nodejs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vamos começar, escolha um editor de texto da sua preferência, eu particulamente gosto de
+utilizar o &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Code&lt;/a&gt;, vamos iniciar o projeto, eu irei
+deixar o nome como ‘exemplo-api-express’, abra o projeto em seu terminal e vamos começar a
+estruturar nosso pequeno projeto. Abra seu terminal e execute o comendo:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm init -yes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Essa linha irá adicionar ao nosso projeto um arquivo chamado package.json e nele irá conter informações
+que o compõem. Se você abrir o package.json deverá se parecer com isso:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+  &quot;name&quot;: &quot;example-api-express&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;rotas.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Se você não conhece nada sobre o arquivo package.json aconselho uma breve &lt;a href=&quot;https://medium.com/trainingcenter/tudo-que-voc%C3%AA-queria-saber-sobre-o-package-lock-json-mas-estava-com-vergonha-de-perguntar-e70589f2855f&quot;&gt;leitura&lt;/a&gt; para ajudar a entender melhor. Novamente no terminal vamos instalar nosso framework, executando:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install express
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Nesse momento deverá aparecer em seu projeto uma pasta chamada node_modules, nessa pasta contém todas as
+nossas dependências, inclusive o express que instalamos a pouco e suas dependências também.&lt;/p&gt;
+
+&lt;p&gt;Agora com o express instalado, vamos usufruir desse belíssimo framework, dentro do projeto crie um arquivo javascript chamado “rotas.js”.&lt;/p&gt;
+
+&lt;p&gt;Agora vamos “requerir” o framework que foi instalado em nossa node_modules para isso vamos adiconar nossa
+primeira linha ao arquivo:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const express = require('express')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;e em seguida vamos startar o express:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const app = express()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Agora nosso arquivo deve estar assim:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;imagemfile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Nesse momento com apenas 2 linhas escritas já podemos definir nossa primeira rota e para fazer isso vamos adicionar o seguinte código:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;app.get('/rota', function (request, response) {
+    response.json(&quot;Rota testada&quot;)
+})
+
+app.listen(4001)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Explicando o que aconteceu acima, dentro da instâcia do app temos alguns metodos que podemos utilizar
+para que possamos definir a rota e os verbos HTTP, caso não conheça os verbos aconselho mais uma &lt;a href=&quot;https://www.devmedia.com.br/servicos-restful-verbos-http/37103&quot;&gt;leitura&lt;/a&gt;, no exemplo mostrei um simples GET.&lt;/p&gt;
+
+&lt;p&gt;Neste metodo get passamos dois paramêtros, o primeiro é a rota, o caminho que deverá ser requisitado, e o
+segundo paramêtro é a função que será executada, também conhecida como callback.&lt;/p&gt;
+
+&lt;p&gt;O nosso callback recebe dois paramêtros, o resquest e response, no response é onde temos informações de
+requisições como POST, PUT, DELETE entre outros, e no response é onde devolvemos a resposta da requisição.&lt;/p&gt;
+
+&lt;p&gt;O metodo app.listen() informa em qual porta do nosso querio 127.0.0.1 será executado nossa api então basta informar uma porta que não esteja sendo utilizada!&lt;/p&gt;
+
+&lt;p&gt;Agora seu arquivo deve estar assim:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;imagemfile2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Nesse momento execute em seu terminal&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node rotas.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Pronto! Se você acessar&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;127.0.0.1/rotas
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;imagemfile3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ja poderemos visualizar nosso retorno! e nesse momento já criamos uma api com uma rota
+que devolve um valor conteúdo com poucas linhas&lt;/p&gt;</content><author><name>leo</name></author><category term="project" /><category term="api" /><category term="nodejs" /><category term="expressjs" /><category term="development" /><summary type="html">Nesse post vamos criar de maneira simples uma api usando Nodejs é um micro framework chamado Expressjs, que nos permite definir rotas de maneira muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços como por exemplo: Heroku, ou Netlify.</summary></entry><entry><title type="html">Aprendizado e Frustração</title><link href="/aprendizado-e-frustracao/" rel="alternate" type="text/html" title="Aprendizado e Frustração" /><published>2019-03-27T00:36:00-03:00</published><updated>2019-03-27T00:36:00-03:00</updated><id>/aprendizado-e-frustracao</id><content type="html" xml:base="/aprendizado-e-frustracao/">&lt;p&gt;A humanidade nunca teve tanta facilidade para consumir conteúdo, em toda a nossa história nunca teve tanta praticidade para acessar inúmeros cursos ou artigos sobre assuntos de nossos interesses nesse universo repleto de requests e responses, porém, também nunca tivemos um índice tão alto de ansiedade que hoje já foi considerado um dos males deste século.&lt;/p&gt;
 
 &lt;p&gt;Quando descobrimos um assunto que nos interessa, buscamos conteúdos a respeito para aprendermos mais sobre isso, e isso é muito bom, descobrir novos conteúdos nos permite cada vez mais conhecer novos horizontes e assim abrir um oceano de vídeos, artigos, cursos incríveis para consumir, basta apenas aprender a navegar, mas quanto mais e mais navegamos pelos mares do aprendizado, cada vez mais queremos navegar mais rápido, e nesses momentos pode nascer um problema que não percebemos a tempo a SPA(síndrome do pensamento acelerado), acredito que já deve ter lido sobre, mas caso não, iremos abordar um pouco sobre a SPA neste texto.&lt;/p&gt;
 
