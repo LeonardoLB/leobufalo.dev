@@ -1466,7 +1466,7 @@ pre {
     
 
     
-        3 mins
+        2 mins
     
 </span>
 
@@ -1486,7 +1486,7 @@ pre {
     </div>
 
 
-<p>Nesse post vamos criar de maneira simples uma api usando Nodejs e um micro framework
+<p>Nesse post vamos criar de maneira simples uma api usando Nodejs e um framework
 chamado <a href="https://expressjs.com">Expressjs</a>, que nos permite definir rotas de maneira
 muito simples, assim podemos criar uma api em alguns minutos e já poder subir em serviços
 como por exemplo: <a href="https://www.heroku.com/">Heroku</a>, ou <a href="https://www.netlify.com/">Netlify</a>.</p>
@@ -1503,7 +1503,7 @@ como por exemplo: <a href="https://www.heroku.com/">Heroku</a>, ou <a href="http
 <p>Vamos começar, escolha um editor de texto da sua preferência, eu particulamente gosto de
 utilizar o <a href="https://code.visualstudio.com/">Visual Code</a>, vamos iniciar o projeto, eu irei
 deixar o nome como ‘exemplo-api-express’, abra o projeto em seu terminal e vamos começar a
-estruturar nosso pequeno projeto. Abra seu terminal e execute o comendo:</p>
+estruturar nosso pequeno projeto. Execute o comando:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm init -yes
 </code></pre></div></div>
 <p>Essa linha irá adicionar ao nosso projeto um arquivo chamado package.json e nele irá conter informações
@@ -1521,7 +1521,7 @@ que o compõem. Se você abrir o package.json deverá se parecer com isso:</p>
   "license": "ISC"
 }
 </code></pre></div></div>
-<p>Se você não conhece nada sobre o arquivo package.json aconselho uma breve <a href="https://medium.com/trainingcenter/tudo-que-voc%C3%AA-queria-saber-sobre-o-package-lock-json-mas-estava-com-vergonha-de-perguntar-e70589f2855f">leitura</a> para ajudar a entender melhor. Novamente no terminal vamos instalar nosso framework, executando:</p>
+<p>Se você não conhece nada sobre o arquivo package.json aconselho uma breve leitura neste <a href="https://medium.com/trainingcenter/tudo-que-voc%C3%AA-queria-saber-sobre-o-package-lock-json-mas-estava-com-vergonha-de-perguntar-e70589f2855f">link</a> para ajudar a entender melhor. Novamente no terminal, vamos instalar nosso framework, executando:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install express
 </code></pre></div></div>
 <p>Nesse momento deverá aparecer em seu projeto uma pasta chamada node_modules, nessa pasta contém todas as
@@ -1559,7 +1559,7 @@ segundo paramêtro é a função que será executada, também conhecida como cal
 <p>O nosso callback recebe dois paramêtros, o resquest e response, no response é onde temos informações de
 requisições como POST, PUT, DELETE entre outros, e no response é onde devolvemos a resposta da requisição.</p>
 
-<p>O metodo app.listen() informa em qual porta do nosso querio 127.0.0.1 será executado nossa api então basta informar uma porta que não esteja sendo utilizada!</p>
+<p>O metodo app.listen() informa em qual porta da nossa máquina(127.0.0.1) será executado nossa api então basta informar uma porta que não esteja sendo utilizada!</p>
 
 <p>Agora seu arquivo deve estar assim:</p>
 
